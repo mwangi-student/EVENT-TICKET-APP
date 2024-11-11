@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AddEvent() {
+export default function AddTicket() {
   return (
     <div>
       <h1>Add events page</h1>
