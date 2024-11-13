@@ -24,14 +24,25 @@
     },
     {
       "id": 3,
-      "name": "opium  all night ",
-      "date": "2024-12-12",
-      "time": "6:00 PM",
-      "location": "Kasarani stadium ",
-      "description": "Come one come all.",
-      "ticketsAvailable": 6000,
-      "organizerId": 3,
-      "poster": "images/Untitled Project.png"
+      "name": "Art & Sculpture Expo",
+      "date": "2024-12-05",
+      "time": "01:00 PM",
+      "location": "National Art Gallery",
+      "description": "A showcase of modern art and sculptures by emerging artists.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 40.0,
+          "quantityAvailable": 100
+        }
+      ],
+      "availableTickets": 150,
+      "contact": {
+        "username": "art_expo_fan",
+        "email": "art_lover@example.com",
+        "avatar": "https://example.com/avatar3.jpg"
+      },
+      "poster": "https://i.pinimg.com/236x/73/54/c6/7354c6196f6de5ddc34635dfd9556903.jpg"
     },
     {
       "id": 4,
@@ -40,9 +51,20 @@
       "time": "09:00 AM",
       "location": "City Hall Conference Center",
       "description": "An event for startups to pitch ideas and network with investors.",
-      "ticketsAvailable": 80,
-      "organizerId": 4,
-      "poster": "https://example.com/images/pitch_fest.jpg"
+      "tickets": [
+        {
+          "type": "Investor",
+          "price": 200.0,
+          "quantityAvailable": 40
+        }
+      ],
+      "availableTickets": 80,
+      "contact": {
+        "username": "startup_guru",
+        "email": "startup_enthusiast@example.com",
+        "avatar": "https://example.com/avatar4.jpg"
+      },
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
     }
   ],
   "tickets": [
@@ -50,8 +72,8 @@
       "id": 1,
       "eventId": 1,
       "type": "Standard",
-      "price":"free",
-      "quantityAvailable": "no limit "
+      "price": "free",
+      "quantityAvailable": "no limit"
     },
     {
       "id": 2,
@@ -87,13 +109,13 @@
       "type": "VIP",
       "price": 5500.0,
       "quantityAvailable": 200
-    } ,
+    },
     {
-      "id":7,
-      "eventId":3,
-      "type":"VVIP",
-      "price":10000.0,
-      "quantityAvailable":60
+      "id": 7,
+      "eventId": 3,
+      "type": "VVIP",
+      "price": 10000.0,
+      "quantityAvailable": 60
     }
   ],
   "users": [
@@ -134,7 +156,7 @@
     },
     {
       "id": 3,
-      "username": "opium  all night ",
+      "username": "opium all night ",
       "email": "",
       "password": "artFan789",
       "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
