@@ -2,36 +2,36 @@
   "events": [
     {
       "id": 1,
-      "name": "Tech Innovators Conference 2024",
-      "date": "2024-12-15",
-      "time": "10:00 AM",
-      "location": "Silicon Valley Convention Center",
-      "description": "A conference for tech enthusiasts to discuss the latest innovations in AI and cloud computing.",
+      "name": "MUSCLE CAR FEST ",
+      "date": "2024-11-23",
+      "time": "10:00 AM -10:00 AM",
+      "location": "Prestige mall r",
+      "description": ".",
       "ticketsAvailable": 100,
       "organizerId": 1,
-      "poster": "https://example.com/images/tech_conference.jpg"
+      "poster": ""
     },
     {
       "id": 2,
-      "name": "Jazz & Blues Night",
-      "date": "2024-11-25",
-      "time": "07:00 PM",
-      "location": "Blue Note Jazz Club",
-      "description": "An evening of smooth jazz and soulful blues with renowned artists.",
-      "ticketsAvailable": 50,
+      "name": "Food festival 2024",
+      "date": "from 25th-28th",
+      "time": "10:00 AM -5:00 PM",
+      "location": "YAYA CENTER",
+      "description": ".",
+      "ticketsAvailable": 300,
       "organizerId": 2,
-      "poster": "https://example.com/images/jazz_night.jpg"
+      "poster": ""
     },
     {
       "id": 3,
-      "name": "Art & Sculpture Expo",
-      "date": "2024-12-05",
-      "time": "01:00 PM",
-      "location": "National Art Gallery",
-      "description": "A showcase of modern art and sculptures by emerging artists.",
-      "ticketsAvailable": 150,
+      "name": "opium  all night ",
+      "date": "2024-12-12",
+      "time": "6:00 PM",
+      "location": "Kasarani stadium ",
+      "description": ".",
+      "ticketsAvailable": 6000,
       "organizerId": 3,
-      "poster": "https://example.com/images/art_expo.jpg"
+      "poster": ""
     },
     {
       "id": 4,
@@ -50,67 +50,74 @@
       "id": 1,
       "eventId": 1,
       "type": "Standard",
-      "price": 50.0,
-      "quantityAvailable": 50
+      "price":"free",
+      "quantityAvailable": "no limit "
     },
     {
       "id": 2,
-      "eventId": 1,
-      "type": "VIP",
-      "price": 150.0,
-      "quantityAvailable": 20
+      "eventId": 2,
+      "type": "Regular",
+      "price": 2500,
+      "quantityAvailable": 300
     },
     {
       "id": 3,
       "eventId": 2,
-      "type": "General Admission",
-      "price": 30.0,
-      "quantityAvailable": 30
+      "type": "VIP",
+      "price": 6000,
+      "quantityAvailable": 60
     },
     {
       "id": 4,
       "eventId": 2,
-      "type": "Reserved Seating",
-      "price": 70.0,
-      "quantityAvailable": 20
+      "type": "VVIP",
+      "price": 10000.0,
+      "quantityAvailable": 30
     },
     {
       "id": 5,
       "eventId": 3,
       "type": "Standard",
-      "price": 40.0,
-      "quantityAvailable": 100
+      "price": 3500.0,
+      "quantityAvailable": 6000
     },
     {
       "id": 6,
-      "eventId": 4,
-      "type": "Investor",
-      "price": 200.0,
-      "quantityAvailable": 40
+      "eventId": 3,
+      "type": "VIP",
+      "price": 5500.0,
+      "quantityAvailable": 200
+    } ,
+    {
+      "id":7,
+      "eventId":3,
+      "type":"VVIP",
+      "price":10000.0,
+      "quantityAvailable":60
     }
   ],
   "users": [
     {
       "id": 1,
-      "username": "event_creator_tech",
-      "email": "tech_creator@example.com",
+      "username": "MUSCLE CAR FEST",
+      "email": "brian.mwangi@student.moringaschool.com",
       "password": "securePassword123",
-      "avatar": "https://example.com/avatar1.jpg",
+      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
       "eventsCreated": [1],
       "ticketsBought": [
         {
           "ticketId": 1,
           "quantity": 2,
-          "purchaseDate": "2024-11-10"
+          "purchaseDate": "2024-11-23"
         }
       ]
     },
     {
       "id": 2,
-      "username": "music_lover_jazz",
-      "email": "jazz_fan@example.com",
+      "username": "MUSCLE CAR FEST",
+      "email": "george.golder@student.moringaschool.com",
       "password": "musicPass456",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
       "eventsCreated": [2],
       "ticketsBought": [
         {
@@ -127,31 +134,16 @@
     },
     {
       "id": 3,
-      "username": "art_expo_fan",
-      "email": "art_lover@example.com",
+      "username": "opium  all night ",
+      "email": "",
       "password": "artFan789",
-      "avatar": "https://example.com/avatar3.jpg",
+      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
       "eventsCreated": [3],
       "ticketsBought": [
         {
-          "ticketId": 5,
+          "ticketId": 7,
           "quantity": 3,
           "purchaseDate": "2024-12-01"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "username": "startup_guru",
-      "email": "startup_enthusiast@example.com",
-      "password": "startup1234",
-      "avatar": "https://example.com/avatar4.jpg",
-      "eventsCreated": [4],
-      "ticketsBought": [
-        {
-          "ticketId": 6,
-          "quantity": 1,
-          "purchaseDate": "2025-01-05"
         }
       ]
     }
