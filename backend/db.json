@@ -24,15 +24,15 @@
     },
     {
       "id": 3,
-      "name": "Art & Sculpture Expo",
+      "name": "opium all night ",
       "date": "2024-12-05",
-      "time": "01:00 PM",
-      "location": "National Art Gallery",
-      "description": "A showcase of modern art and sculptures by emerging artists.",
+      "time": "06:00 PM",
+      "location": "Kasarani stadium",
+      "description": "A showcase of modern art of music by emerging artists,such as lil yatchy ,tyler the creator,baby keem,young thug,gunna,pharell williams,jhene aneiko, playboi carti and asap rocky.",
       "tickets": [
         {
           "type": "Standard",
-          "price": 40.0,
+          "price": 3500.0,
           "quantityAvailable": 100
         }
       ],
@@ -42,7 +42,7 @@
         "email": "art_lover@example.com",
         "avatar": "https://example.com/avatar3.jpg"
       },
-      "poster": "https://i.pinimg.com/236x/73/54/c6/7354c6196f6de5ddc34635dfd9556903.jpg"
+      "poster": "images/Rock the Night Music (1).png"
     },
     {
       "id": 4,
