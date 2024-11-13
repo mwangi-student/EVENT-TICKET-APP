@@ -1,0 +1,9 @@
+.ticket-card {
+  width: 18rem; /* Set a fixed width for all cards */
+  height: 100%; /* Make cards take up full container height */
+}
+
+.ticket-card img {
+  height: 200px; /* Consistent image height */
+  object-fit: cover; /* Ensures image scales without distortion */
+}
