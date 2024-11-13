@@ -136,7 +136,7 @@
     },
     {
       "id": 2,
-      "username": "MUSCLE CAR FEST",
+      "username": "Food festival",
       "email": "george.golder@student.moringaschool.com",
       "password": "musicPass456",
       "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
@@ -157,7 +157,7 @@
     {
       "id": 3,
       "username": "opium all night ",
-      "email": "",
+      "email": "pefodab193@inikale.com",
       "password": "artFan789",
       "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
       "eventsCreated": [3],
