@@ -20,6 +20,7 @@ function Footer() {
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact Us</Link></li> 
+            
           </ul>
         </nav>
 
@@ -31,8 +32,7 @@ function Footer() {
           <p>habsa.abdirizack@student.moringaschool.com</p>
         </div>
 
-        <p>Phone Number:</p>
-        <FaPhoneAlt />
+        Phone Number<FaPhoneAlt />
         <p>
           <a href="tel:+254704048319">+254 704 048 319</a>
         </p>

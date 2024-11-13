@@ -33,7 +33,7 @@
   
  .navbar nav ul li a {
     color: #ecf0f1;    
-    transition: transform 0.3s ease, color 0.3s ease; 
+    
     font-family: Arial, Helvetica, sans-serif
   }
   
