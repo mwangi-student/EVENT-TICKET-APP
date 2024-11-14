@@ -1,34 +1,35 @@
 {
-  "events": [
+  "eventsTickets": [
     {
       "id": 1,
-      "name": "MUSCLE CAR FEST ",
+      "name": "MUSCLE CAR FEST",
       "date": "2024-11-23",
-      "time": "10:00 AM -10:00 AM",
-      "location": "Prestige mall r",
+      "time": "10:00 AM - 10:00 AM",
+      "location": "Prestige mall",
       "description": "Come see all your favourite cars.",
-      "ticketsAvailable": 100,
-      "organizerId": 1,
-      "poster": "images/Muscle Car Fest.png"
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": "free",
+          "quantityAvailable": "no limit"
+        }
+      ],
+      "availableTickets": 100,
+      "contact": {
+        "username": "muscle_car_enthusiast",
+        "email": "musclecars@example.com",
+        "avatar": "https://example.com/avatar1.jpg"
+      },
+      "poster": "https://i0.wp.com/www.pomonaswapmeet.com/blog/wp-content/uploads/2013/07/Red-Muscle-Car.jpg?fit=950%2C600&ssl=1"
     },
-    {
-      "id": 2,
-      "name": "Food festival 2024",
-      "date": "from 25th-28th",
-      "time": "10:00 AM -5:00 PM",
-      "location": "YAYA CENTER",
-      "description": "Eat to your fullest.",
-      "ticketsAvailable": 300,
-      "organizerId": 2,
-      "poster": "images/Untitled Project.png"
-    },
+
     {
       "id": 3,
-      "name": "opium all night ",
+      "name": "Opium All Night",
       "date": "2024-12-05",
       "time": "06:00 PM",
       "location": "Kasarani stadium",
-      "description": "A showcase of modern art of music by emerging artists, such as Lil Yachty, Tyler the Creator, Baby Keem, Young Thug, Gunna, Pharrell Williams, Jhene Aiko, Playboi Carti, and ASAP Rocky.",
+      "description": "A showcase of modern music by emerging artists like Lil Yachty, Tyler the Creator, Baby Keem, and more.",
       "tickets": [
         {
           "type": "Standard",
@@ -38,8 +39,8 @@
       ],
       "availableTickets": 150,
       "contact": {
-        "username": "art_expo_fan",
-        "email": "art_lover@example.com",
+        "username": "night_vibes",
+        "email": "opiumevent@example.com",
         "avatar": "https://example.com/avatar3.jpg"
       },
       "poster": "images/Rock the Night Music (1).png"
@@ -65,244 +66,6 @@
         "avatar": "https://example.com/avatar4.jpg"
       },
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
-    },
-    {
-      "id": 10,
-      "name": "Ultimate Gaming Tournament",
-      "date": "2025-05-01",
-      "time": "09:00 AM",
-      "location": "Panari Sky Center",
-      "description": "The ultimate battle for the best gamers in various eSports titles, featuring international and local players.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": 2000.0,
-          "quantityAvailable": 300
-        },
-        {
-          "type": "VIP",
-          "price": 5000.0,
-          "quantityAvailable": 100
-        }
-      ],
-      "availableTickets": 400,
-      "contact": {
-        "username": "gaming_pro",
-        "email": "gamer@example.com",
-        "avatar": "https://example.com/avatar_gamer.jpg"
-      },
-      "poster": "images/ultimate_gaming_poster.png"
-    },
-    {
-      "id": 11,
-      "name": "Cultural Arts Festival",
-      "date": "2025-06-10",
-      "time": "12:00 PM",
-      "location": "KICC Nairobi",
-      "description": "A celebration of arts, culture, and heritage with live performances, exhibitions, and workshops.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": 1500.0,
-          "quantityAvailable": 250
-        },
-        {
-          "type": "VIP",
-          "price": 3500.0,
-          "quantityAvailable": 100
-        }
-      ],
-      "availableTickets": 350,
-      "contact": {
-        "username": "arts_culture_lover",
-        "email": "culturefan@example.com",
-        "avatar": "https://example.com/avatar_culture.jpg"
-      },
-      "poster": "images/cultural_arts_festival.png"
-    },
-    {
-      "id": 12,
-      "name": "Jazz Night Under the Stars",
-      "date": "2025-07-20",
-      "time": "07:00 PM",
-      "location": "Nairobi Arboretum",
-      "description": "An evening of smooth jazz performances under the stars with renowned local and international artists.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": 3000.0,
-          "quantityAvailable": 150
-        },
-        {
-          "type": "VIP",
-          "price": 6000.0,
-          "quantityAvailable": 50
-        }
-      ],
-      "availableTickets": 200,
-      "contact": {
-        "username": "jazz_lover",
-        "email": "jazzfan@example.com",
-        "avatar": "https://example.com/avatar_jazz.jpg"
-      },
-      "poster": "images/jazz_night_under_stars.png"
-    },
-    {
-      "id": 13,
-      "name": "Luxury Car Show",
-      "date": "2025-08-15",
-      "time": "10:00 AM",
-      "location": "Nairobi Motor Mall",
-      "description": "An exhibition of the latest luxury car models from top manufacturers, with test drives and expert presentations.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": 2000.0,
-          "quantityAvailable": 500
-        },
-        {
-          "type": "VIP",
-          "price": 8000.0,
-          "quantityAvailable": 100
-        }
-      ],
-      "availableTickets": 600,
-      "contact": {
-        "username": "car_expo",
-        "email": "luxurycar@example.com",
-        "avatar": "https://example.com/avatar_car.jpg"
-      },
-      "poster": "images/luxury_car_show.png"
-    },
-    {
-      "id": 14,
-      "name": "Space Exploration Conference",
-      "date": "2025-09-25",
-      "time": "08:00 AM",
-      "location": "Kenya Science Campus",
-      "description": "A conference for space enthusiasts, featuring talks on the latest developments in space exploration, technology, and future missions.",
-      "tickets": [
-        {
-          "type": "General",
-          "price": 1000.0,
-          "quantityAvailable": 300
-        },
-        {
-          "type": "VIP",
-          "price": 3500.0,
-          "quantityAvailable": 50
-        }
-      ],
-      "availableTickets": 350,
-      "contact": {
-        "username": "space_enthusiast",
-        "email": "spacefan@example.com",
-        "avatar": "https://example.com/avatar_space.jpg"
-      },
-      "poster": "images/space_exploration_conference.png"
-    }
-  ],
-  "tickets": [
-    {
-      "id": 1,
-      "eventId": 1,
-      "type": "Standard",
-      "price": "free",
-      "quantityAvailable": "no limit"
-    },
-    {
-      "id": 2,
-      "eventId": 2,
-      "type": "Regular",
-      "price": 2500,
-      "quantityAvailable": 300
-    },
-    {
-      "id": 3,
-      "eventId": 2,
-      "type": "VIP",
-      "price": 6000,
-      "quantityAvailable": 60
-    },
-    {
-      "id": 4,
-      "eventId": 2,
-      "type": "VVIP",
-      "price": 10000.0,
-      "quantityAvailable": 30
-    },
-    {
-      "id": 5,
-      "eventId": 3,
-      "type": "Standard",
-      "price": 3500.0,
-      "quantityAvailable": 6000
-    },
-    {
-      "id": 6,
-      "eventId": 3,
-      "type": "VIP",
-      "price": 5500.0,
-      "quantityAvailable": 200
-    },
-    {
-      "id": 7,
-      "eventId": 3,
-      "type": "VVIP",
-      "price": 10000.0,
-      "quantityAvailable": 60
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "username": "MUSCLE CAR FEST",
-      "email": "brian.mwangi@student.moringaschool.com",
-      "password": "securePassword123",
-      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
-      "eventsCreated": [1],
-      "ticketsBought": [
-        {
-          "ticketId": 1,
-          "quantity": 2,
-          "purchaseDate": "2024-11-23"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "username": "Food festival",
-      "email": "george.golder@student.moringaschool.com",
-      "password": "musicPass456",
-      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
-      "eventsCreated": [2],
-      "ticketsBought": [
-        {
-          "ticketId": 3,
-          "quantity": 1,
-          "purchaseDate": "2024-11-09"
-        },
-        {
-          "ticketId": 4,
-          "quantity": 2,
-          "purchaseDate": "2024-11-09"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "username": "opium all night ",
-      "email": "pefodab193@inikale.com",
-      "password": "artFan789",
-      "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
-      "eventsCreated": [3],
-      "ticketsBought": [
-        {
-          "ticketId": 7,
-          "quantity": 3,
-          "purchaseDate": "2024-12-01"
-        }
-      ]
     }
   ]
 }
