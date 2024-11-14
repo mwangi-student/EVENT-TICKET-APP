@@ -32,7 +32,7 @@ function Footer() {
           <p>habsa.abdirizack@student.moringaschool.com</p>
         </div>
 
-        Phone Number<FaPhoneAlt />
+        Phone Number<FaPhoneAlt/>
         <p>
           <a href="tel:+254704048319">+254 704 048 319</a>
         </p>
