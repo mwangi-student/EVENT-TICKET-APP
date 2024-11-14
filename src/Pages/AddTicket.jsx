@@ -23,7 +23,7 @@ export default function AddTicketForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/events", {
+      const response = await fetch("http://localhost:3000/eventsTickets", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
