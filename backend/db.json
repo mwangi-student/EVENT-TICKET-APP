@@ -1,34 +1,35 @@
 {
-  "events": [
+  "eventsTickets": [
     {
       "id": 1,
-      "name": "MUSCLE CAR FEST ",
+      "name": "MUSCLE CAR FEST",
       "date": "2024-11-23",
-      "time": "10:00 AM -10:00 AM",
-      "location": "Prestige mall r",
+      "time": "10:00 AM - 10:00 AM",
+      "location": "Prestige mall",
       "description": "Come see all your favourite cars.",
-      "ticketsAvailable": 100,
-      "organizerId": 1,
-      "poster": "images/Muscle Car Fest.png"
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": "free",
+          "quantityAvailable": "no limit"
+        }
+      ],
+      "availableTickets": 100,
+      "contact": {
+        "username": "muscle_car_enthusiast",
+        "email": "musclecars@example.com",
+        "avatar": "https://example.com/avatar1.jpg"
+      },
+      "poster": "https://i0.wp.com/www.pomonaswapmeet.com/blog/wp-content/uploads/2013/07/Red-Muscle-Car.jpg?fit=950%2C600&ssl=1"
     },
-    {
-      "id": 2,
-      "name": "Food festival 2024",
-      "date": "from 25th-28th",
-      "time": "10:00 AM -5:00 PM",
-      "location": "YAYA CENTER",
-      "description": "Eat to your fullest.",
-      "ticketsAvailable": 300,
-      "organizerId": 2,
-      "poster": "images/Untitled Project.png"
-    },
+
     {
       "id": 3,
-      "name": "opium all night ",
+      "name": "Opium All Night",
       "date": "2024-12-05",
       "time": "06:00 PM",
       "location": "Kasarani stadium",
-      "description": "A showcase of modern art of music by emerging artists, such as Lil Yachty, Tyler the Creator, Baby Keem, Young Thug, Gunna, Pharrell Williams, Jhene Aiko, Playboi Carti, and ASAP Rocky.",
+      "description": "A showcase of modern music by emerging artists like Lil Yachty, Tyler the Creator, Baby Keem, and more.",
       "tickets": [
         {
           "type": "Standard",
@@ -38,8 +39,8 @@
       ],
       "availableTickets": 150,
       "contact": {
-        "username": "art_expo_fan",
-        "email": "art_lover@example.com",
+        "username": "night_vibes",
+        "email": "opiumevent@example.com",
         "avatar": "https://example.com/avatar3.jpg"
       },
       "poster": "images/Rock the Night Music (1).png"
@@ -65,6 +66,7 @@
         "avatar": "https://example.com/avatar4.jpg"
       },
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
+<<<<<<< HEAD
     },
     {
       "id": 10,
@@ -303,6 +305,8 @@
           "purchaseDate": "2024-12-01"
         }
       ]
+=======
+>>>>>>> 0b0bc829bb2fe15c55ea0e5006c6a49b457bd431
     }
   ]
 }
