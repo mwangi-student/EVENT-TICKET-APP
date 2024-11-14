@@ -91,7 +91,7 @@
         "email": "gamer@example.com",
         "avatar": "https://example.com/avatar_gamer.jpg"
       },
-      "poster": "images/ultimate_gaming_poster.png"
+      "poster": "https://i.pinimg.com/236x/0b/0d/a1/0b0da1d22b68acb707c324efdd001c5b.jpg"
     },
     {
       "id": 11,
@@ -145,7 +145,7 @@
         "email": "jazzfan@example.com",
         "avatar": "https://example.com/avatar_jazz.jpg"
       },
-      "poster": "images/jazz_night_under_stars.png"
+      "poster": "https://i.pinimg.com/736x/4e/2c/60/4e2c60ce5f29ab39eb74b3d2a3702deb.jpg"
     },
     {
       "id": 13,
