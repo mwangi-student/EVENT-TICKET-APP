@@ -1,30 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; 
-import { FaRegCalendarDays } from "react-icons/fa6";
-import { GoClock } from "react-icons/go";
-
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
+  const logoPath = "/images/Logo.png"; // Ensure the logo path is correct
+
   return (
     <header className="navbar">
-    <div className="logo">
-     GAHMAN <GoClock /> <br/>
-     EVENTS<FaRegCalendarDays />
-  </div>
-  
-       <nav className='nav-links'>
+      <div className="logo">
+        <img src={logoPath} alt="Logo" className="navbar-logo" />
+      </div>
+
+      <nav className="nav-center">
         <ul className="nav-links">
-          <li><Link to="/">HOME</Link></li>
-          <li><Link to="/events">EVENTS</Link></li>
-          <li><Link to="/addEvent">ADD EVENTS</Link></li>
-          
+          <li>
+            <Link to="/">ALL EVENTS</Link>
+          </li>
+          <li>
+            <Link to="/addTicket">ADD EVENTS</Link>
+          </li>
         </ul>
       </nav>
-      <input type='text' placeholder='Search'  />
+
+      <div className="search-container">
+        <input type="text" placeholder="Search" className="search-input" />
+      </div>
     </header>
   );
 }
 
-export default Navbar;       
+export default Navbar;

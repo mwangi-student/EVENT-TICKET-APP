@@ -2,84 +2,28 @@
   "eventsTickets": [
     {
       "id": 1,
-      "name": "MUSCLE CAR FEST",
-      "date": "2024-11-23",
-      "time": "10:00 AM - 10:00 AM",
-      "location": "Prestige mall",
-      "description": "Come see all your favourite cars.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": "free",
-          "quantityAvailable": "no limit"
-        }
-      ],
-      "availableTickets": 100,
-      "contact": {
-        "username": "MUSCLE CAR FEST",
-        "email": "brian.mwangi@student.moringaschool.com",
-        "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg"
-      },
-      "poster": "https://i0.wp.com/www.pomonaswapmeet.com/blog/wp-content/uploads/2013/07/Red-Muscle-Car.jpg?fit=950%2C600&ssl=1"
-    },
-    {
-      "id": 2,
-      "name": "Food festival 2024",
-      "date": "from 25th-28th",
-      "time": "10:00 AM - 5:00 PM",
-      "location": "YAYA CENTER",
-      "description": "Eat to your fullest.",
-      "tickets": [
-        {
-          "type": "Regular",
-          "price": 2500,
-          "quantityAvailable": 300
-        },
-        {
-          "type": "VIP",
-          "price": 6000,
-          "quantityAvailable": 60
-        },
-        {
-          "type": "VVIP",
-          "price": 10000.0,
-          "quantityAvailable": 30
-        }
-      ],
-      "availableTickets": 300,
-      "contact": {
-        "username": "Food festival",
-        "email": "george.golder@student.moringaschool.com",
-        "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg"
-      },
-      "poster": "https://i.ytimg.com/vi/BLsQyx604Yc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYWKCLjjwlIHVaM6MGC9bvpVLe_A"
-    },
-    {
-      "id": 3,
-      "name": "Opium All Night",
       "name": "Opium All Night",
       "date": "2024-12-05",
-      "time": "06:00 PM",
-      "location": "Kasarani stadium",
-      "description": "A showcase of modern art of music by emerging artists, such as Lil Yachty, Tyler the Creator, Baby Keem, Young Thug, Gunna, Pharrell Williams, Jhene Aiko, Playboi Carti, and ASAP Rocky.",
+      "time": "01:00 PM",
+      "location": "National Art Gallery",
+      "description": "A showcase of modern art and sculptures by emerging artists.",
       "tickets": [
         {
           "type": "Standard",
-          "price": 3500.0,
           "price": 3500.0,
           "quantityAvailable": 100
         }
       ],
       "availableTickets": 150,
       "contact": {
-        "username": "opium all night",
-        "email": "pefodab193@inikale.com",
-        "avatar": "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg"
+        "username": "art_expo_fan",
+        "email": "art_lover@example.com",
+        "avatar": "https://example.com/avatar3.jpg"
       },
-      "poster": "https://i0.wp.com/discotech.me/wp-content/uploads/2018/11/02.jpg?resize=1500%2C1000&ssl=1"
+      "poster": "https://i.postimg.cc/xjK0zVQP/Rock-the-Night-Music-1.png"
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Startup Pitch Fest",
       "date": "2025-01-15",
       "time": "09:00 AM",
@@ -101,7 +45,7 @@
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
     },
     {
-      "id": 10,
+      "id": 3,
       "name": "Ultimate Gaming Tournament",
       "date": "2025-05-01",
       "time": "09:00 AM",
@@ -128,7 +72,7 @@
       "poster": "https://i.pinimg.com/236x/0b/0d/a1/0b0da1d22b68acb707c324efdd001c5b.jpg"
     },
     {
-      "id": 11,
+      "id": 4,
       "name": "Cultural Arts Festival",
       "date": "2025-06-10",
       "time": "12:00 PM",
@@ -152,10 +96,10 @@
         "email": "culturefan@example.com",
         "avatar": "https://example.com/avatar_culture.jpg"
       },
-      "poster": "images/cultural_arts_festival.png"
+      "poster": "https://images.theconversation.com/files/558643/original/file-20231109-15-2nu52.jpg?ixlib=rb-4.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"
     },
     {
-      "id": 12,
+      "id": 5,
       "name": "Jazz Night Under the Stars",
       "date": "2025-07-20",
       "time": "07:00 PM",
@@ -179,10 +123,10 @@
         "email": "jazzfan@example.com",
         "avatar": "https://example.com/avatar_jazz.jpg"
       },
-      "poster": "https://i.pinimg.com/736x/4e/2c/60/4e2c60ce5f29ab39eb74b3d2a3702deb.jpg"
+      "poster": "https://source.boomplaymusic.com/group10/M00/11/22/6a27876918254543bb932fa87bd99992_464_464.jpg"
     },
     {
-      "id": 13,
+      "id": 6,
       "name": "Luxury Car Show",
       "date": "2025-08-15",
       "time": "10:00 AM",
@@ -206,10 +150,10 @@
         "email": "luxurycar@example.com",
         "avatar": "https://example.com/avatar_car.jpg"
       },
-      "poster": "images/luxury_car_show.png"
+      "poster": "https://static01.nyt.com/images/2020/09/27/business/27china-consumer-1/merlin_177606999_134d92b7-3530-4214-a54c-b9c17c98d464-superJumbo.jpg"
     },
     {
-      "id": 14,
+      "id": 7,
       "name": "Space Exploration Conference",
       "date": "2025-09-25",
       "time": "08:00 AM",
@@ -233,7 +177,7 @@
         "email": "spacefan@example.com",
         "avatar": "https://example.com/avatar_space.jpg"
       },
-      "poster": "images/space_exploration_conference.png"
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbXvIA0kTUqOx_e-Ry8Pw_T3jZcVuWBkDlw&s"
     }
   ]
 }

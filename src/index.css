@@ -26,7 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: start;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -67,8 +67,6 @@ button:focus-visible {
   }
 }
 
-
-
 .form-container {
   background-color: white;
   padding: 40px;
@@ -77,7 +75,6 @@ button:focus-visible {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
 
 .form-header {
   background-color: black;
@@ -89,13 +86,11 @@ button:focus-visible {
   margin-bottom: 30px;
 }
 
-
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;  
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 
 .left-side input,
 .left-side textarea,
@@ -106,15 +101,14 @@ button:focus-visible {
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 10px;
-  background-color: white;  
+  background-color: white;
 }
 
-
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
-  border-color: #3498db;  
+  border-color: #3498db;
 }
-
 
 .submit-button {
   background-color: orange;
@@ -131,8 +125,42 @@ input:focus, textarea:focus {
 }
 
 .submit-button:hover {
-  background-color: #e07b00; 
+  background-color: #e07b00;
 }
 
+/* Ensure HTML and body take full width and height */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
- 
+/* Full-width footer */
+.footer {
+  width: 100vw; /* Ensures it covers the full viewport width */
+  background-color: #d32f2f; /* Replace with your desired color */
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+/* Center content inside footer */
+.footer-content {
+  max-width: 1200px; /* Center and limit content width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* Reset margins for container classes */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

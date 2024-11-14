@@ -16,12 +16,6 @@ function Home() {
 
   return (
     <main>
-      <h2>
-        Hi Hafsa and Golder <i className="fas fa-hand-paper"></i>. Kindly let's
-        keep pushing through with the project. Won't be around today but let me
-        find you progressed.
-      </h2>
-
       <TicketList eventsTickets={tickets} />
     </main>
   );
