@@ -28,7 +28,7 @@
       "date": "2024-12-05",
       "time": "06:00 PM",
       "location": "Kasarani stadium",
-      "description": "A showcase of modern art of music by emerging artists,such as lil yatchy ,tyler the creator,baby keem,young thug,gunna,pharell williams,jhene aneiko, playboi carti and asap rocky.",
+      "description": "A showcase of modern art of music by emerging artists, such as Lil Yachty, Tyler the Creator, Baby Keem, Young Thug, Gunna, Pharrell Williams, Jhene Aiko, Playboi Carti, and ASAP Rocky.",
       "tickets": [
         {
           "type": "Standard",
@@ -65,6 +65,141 @@
         "avatar": "https://example.com/avatar4.jpg"
       },
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
+    },
+    {
+      "id": 10,
+      "name": "Ultimate Gaming Tournament",
+      "date": "2025-05-01",
+      "time": "09:00 AM",
+      "location": "Panari Sky Center",
+      "description": "The ultimate battle for the best gamers in various eSports titles, featuring international and local players.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 2000.0,
+          "quantityAvailable": 300
+        },
+        {
+          "type": "VIP",
+          "price": 5000.0,
+          "quantityAvailable": 100
+        }
+      ],
+      "availableTickets": 400,
+      "contact": {
+        "username": "gaming_pro",
+        "email": "gamer@example.com",
+        "avatar": "https://example.com/avatar_gamer.jpg"
+      },
+      "poster": "images/ultimate_gaming_poster.png"
+    },
+    {
+      "id": 11,
+      "name": "Cultural Arts Festival",
+      "date": "2025-06-10",
+      "time": "12:00 PM",
+      "location": "KICC Nairobi",
+      "description": "A celebration of arts, culture, and heritage with live performances, exhibitions, and workshops.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 1500.0,
+          "quantityAvailable": 250
+        },
+        {
+          "type": "VIP",
+          "price": 3500.0,
+          "quantityAvailable": 100
+        }
+      ],
+      "availableTickets": 350,
+      "contact": {
+        "username": "arts_culture_lover",
+        "email": "culturefan@example.com",
+        "avatar": "https://example.com/avatar_culture.jpg"
+      },
+      "poster": "images/cultural_arts_festival.png"
+    },
+    {
+      "id": 12,
+      "name": "Jazz Night Under the Stars",
+      "date": "2025-07-20",
+      "time": "07:00 PM",
+      "location": "Nairobi Arboretum",
+      "description": "An evening of smooth jazz performances under the stars with renowned local and international artists.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 3000.0,
+          "quantityAvailable": 150
+        },
+        {
+          "type": "VIP",
+          "price": 6000.0,
+          "quantityAvailable": 50
+        }
+      ],
+      "availableTickets": 200,
+      "contact": {
+        "username": "jazz_lover",
+        "email": "jazzfan@example.com",
+        "avatar": "https://example.com/avatar_jazz.jpg"
+      },
+      "poster": "images/jazz_night_under_stars.png"
+    },
+    {
+      "id": 13,
+      "name": "Luxury Car Show",
+      "date": "2025-08-15",
+      "time": "10:00 AM",
+      "location": "Nairobi Motor Mall",
+      "description": "An exhibition of the latest luxury car models from top manufacturers, with test drives and expert presentations.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 2000.0,
+          "quantityAvailable": 500
+        },
+        {
+          "type": "VIP",
+          "price": 8000.0,
+          "quantityAvailable": 100
+        }
+      ],
+      "availableTickets": 600,
+      "contact": {
+        "username": "car_expo",
+        "email": "luxurycar@example.com",
+        "avatar": "https://example.com/avatar_car.jpg"
+      },
+      "poster": "images/luxury_car_show.png"
+    },
+    {
+      "id": 14,
+      "name": "Space Exploration Conference",
+      "date": "2025-09-25",
+      "time": "08:00 AM",
+      "location": "Kenya Science Campus",
+      "description": "A conference for space enthusiasts, featuring talks on the latest developments in space exploration, technology, and future missions.",
+      "tickets": [
+        {
+          "type": "General",
+          "price": 1000.0,
+          "quantityAvailable": 300
+        },
+        {
+          "type": "VIP",
+          "price": 3500.0,
+          "quantityAvailable": 50
+        }
+      ],
+      "availableTickets": 350,
+      "contact": {
+        "username": "space_enthusiast",
+        "email": "spacefan@example.com",
+        "avatar": "https://example.com/avatar_space.jpg"
+      },
+      "poster": "images/space_exploration_conference.png"
     }
   ],
   "tickets": [
