@@ -1,0 +1,37 @@
+/* Style for input fields to reduce width and enhance appearance */
+.form-group {
+  max-width: 500px; /* Limit the width */
+  margin: 0 auto 1.5rem auto; /* Center align and add bottom margin */
+}
+
+.form-control {
+  width: 100%; /* Make the input fill the available space */
+  max-width: 400px; /* Limit max width */
+  padding: 0.75rem 1rem; /* Add padding for better click area */
+  border-radius: 0.25rem; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 1rem; /* Set a readable font size */
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Highlight border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+/* Add some space between form elements */
+.btn {
+  margin-top: 1rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+  .form-group {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+  .form-control,
+  .btn {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 100%; /* Ensure inputs fill the available space */
+  }
+}

@@ -1,8 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import "./IndividualTicket.css";
 
-function IndividualTicket({ event_id }) {
+function IndividualTicket() {
+  const { event_id } = useParams();
+  const navigate = useNavigate();
   const [event, setEvent] = useState(null);
   const [error, setError] = useState(null);
+  const [message, setMessage] = useState("");
+  const [editingTicket, setEditingTicket] = useState(null);
+  const [updatedTicket, setUpdatedTicket] = useState({
+    type: "",
+    price: "",
+    quantityAvailable: "",
+    location: "",
+    email: "",
+    poster: ""
+  });
 
   useEffect(() => {
     if (!event_id) {
@@ -11,12 +25,13 @@ function IndividualTicket({ event_id }) {
     }
 
     // Fetch event data based on event ID
-    fetch(`http://localhost:3000/eventsTickets/${event_id}`)
+    fetch(
+      `http://localhost:3000/eventsTickets/${event_id}?_=${new Date().getTime()}`
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch event data.");
         }
-        console.log(response);
         return response.json();
       })
       .then((data) => {
@@ -28,60 +43,234 @@ function IndividualTicket({ event_id }) {
       });
   }, [event_id]);
 
+  const handleEditClick = (ticket) => {
+    setEditingTicket(ticket);
+    setUpdatedTicket({
+      type: ticket.type || "",
+      price: ticket.price || "",
+      quantityAvailable: ticket.quantityAvailable || "",
+      location: ticket.location || "",
+      email: ticket.contact?.email || "",
+      poster: ticket.poster || ""
+    });
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUpdatedTicket((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSaveClick = () => {
+    if (editingTicket) {
+      const updatedTickets = event.tickets.map((ticket) =>
+        ticket.id === editingTicket.id
+          ? { ...ticket, ...updatedTicket }
+          : ticket
+      );
+
+      // Update the event with the new ticket data
+      const updatedEvent = { ...event, tickets: updatedTickets };
+
+      // Send the updated data to the server
+      fetch(
+        `http://localhost:3000/eventsTickets/${
+          event.id
+        }?_=${new Date().getTime()}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(updatedEvent)
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setEvent(data);
+          setEditingTicket(null); // Close the edit form
+        })
+        .catch((error) => {
+          setError("Failed to save the updated ticket data.");
+          console.error("Error updating event data:", error);
+        });
+    }
+  };
+
+  const handleCancelClick = () => {
+    setEditingTicket(null); // Close the edit form without saving
+  };
+
+  const deleteEvent = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/eventsTickets/${event_id}?_=${new Date().getTime()}`,
+        {
+          method: "DELETE"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to delete event");
+      }
+
+      setMessage(alert("Event successfully deleted!"));
+      setTimeout(() => navigate("/"), 2000);
+    } catch (error) {
+      console.error("Error deleting event:", error);
+      setMessage("Failed to delete event.");
+    }
+  };
+
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="alert alert-danger">Error: {error}</div>;
   }
 
   if (!event) {
-    return <div>Loading...</div>;
+    return <div className="text-center">Loading...</div>;
   }
 
   return (
-    <div>
-      <h2>{event.name}</h2>
-      <p>
-        <strong>Date:</strong> {event.date}
-      </p>
-      <p>
-        <strong>Time:</strong> {event.time}
-      </p>
-      <p>
-        <strong>Location:</strong> {event.location}
-      </p>
-      <p>
-        <strong>Description:</strong> {event.description}
-      </p>
+    <div className="container mt-5">
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title">
+            {event.name}
+            <hr
+              style={{
+                width: "300px",
+                backgroundColor: "black",
+                height: "2px",
+                border: "none",
+                margin: "10px auto"
+              }}
+            />
+          </h2>
 
-      <div>
-        <h3>Available Tickets:</h3>
-        {event.tickets.map((ticket, index) => (
-          <div key={index}>
+          <div className="mt-4">
+            <img
+              src={event.poster}
+              alt={event.name}
+              className="img-fluid"
+              width="300"
+            />
+          </div>
+
+          <p>
+            <strong>Time:</strong> {event.time}
+          </p>
+          <p>
+            <strong>Location:</strong> {event.location}
+          </p>
+
+          <div className="mt-4">
+            <h3>Contact Information:</h3>
             <p>
-              {ticket.type} - Price: {ticket.price} - Available:{" "}
-              {ticket.quantityAvailable}
+              <strong>Email:</strong> {event.contact?.email}
             </p>
           </div>
-        ))}
-      </div>
 
-      <div>
-        <h3>Contact Information:</h3>
-        <p>
-          <strong>Username:</strong> {event.contact.username}
-        </p>
-        <p>
-          <strong>Email:</strong> {event.contact.email}
-        </p>
-        <img
-          src={event.contact.avatar}
-          alt={`${event.contact.username}'s avatar`}
-          width="50"
-        />
-      </div>
+          <p>
+            <strong>Description:</strong> {event.description}
+          </p>
 
-      <div>
-        <h3>Event Poster:</h3>
-        <img src={event.poster} alt={event.name} width="300" />
+          <div>
+            <h3>Available Tickets:</h3>
+            {event.tickets.map((ticket, index) => (
+              <div key={index} className="mb-3">
+                <p>
+                  {ticket.type} - Price: {ticket.price} - Available:{" "}
+                  {ticket.quantityAvailable}
+                </p>
+                <button
+                  className="btn btn-warning"
+                  onClick={() => handleEditClick(ticket)}
+                >
+                  Edit
+                </button>
+                <br />
+                <button
+                  className="btn btn-outline-warning mt-2"
+                  onClick={deleteEvent}
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
+          </div>
+
+          {message && <p>{message}</p>}
+
+          {editingTicket && (
+            <div className="mt-4">
+              <h3>Edit Ticket</h3>
+              <div className="form-group">
+                <label>Type:</label>
+                <input
+                  type="text"
+                  name="type"
+                  className="form-control"
+                  value={updatedTicket.type}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <label>Price:</label>
+                <input
+                  type="number"
+                  name="price"
+                  className="form-control"
+                  value={updatedTicket.price}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <label>Tickets Available:</label>
+                <input
+                  type="number"
+                  name="quantityAvailable"
+                  className="form-control"
+                  value={updatedTicket.quantityAvailable}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <label>Location:</label>
+                <input
+                  type="text"
+                  name="location"
+                  className="form-control"
+                  value={updatedTicket.location}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <label>Contact Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  value={updatedTicket.email}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <button
+                className="btn btn-warning mt-3"
+                onClick={handleSaveClick}
+              >
+                Save
+              </button>
+              <button
+                className="btn btn-outline-warning mt-3 ms-2"
+                onClick={handleCancelClick}
+              >
+                Cancel
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -12,16 +12,17 @@ function TicketCard({ id, name, date, location, poster, description }) {
   };
 
   const handleBuyTicket = () => {
-    navigate(`/ticket/${id}`);
+    alert("Tickets bought successfully!"); // Show success message
+    navigate("/addTicket");
   };
 
   return (
-    <Card className="ticket-card h-100 shadow-sm" style={{ width: "18rem" }}>
+    <Card className="ticket-card h-100 shadow-sm" style={{ width: "20rem" }}>
       <Card.Img
         variant="top"
         src={poster}
         alt={`${name} poster`}
-        style={{ height: "200px", objectFit: "cover" }}
+        style={{ height: "300px", objectFit: "cover" }}
       />
       <Card.Body>
         <Card.Title className="fw-bold">{name}</Card.Title>

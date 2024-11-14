@@ -14,17 +14,13 @@ function Navbar() {
       <nav className="nav-center">
         <ul className="nav-links">
           <li>
-            <Link to="/">ALL EVENTS</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
             <Link to="/addTicket">ADD EVENTS</Link>
           </li>
         </ul>
       </nav>
-
-      <div className="search-container">
-        <input type="text" placeholder="Search" className="search-input" />
-      </div>
     </header>
   );
 }

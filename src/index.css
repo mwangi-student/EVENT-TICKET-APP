@@ -26,7 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: start;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 

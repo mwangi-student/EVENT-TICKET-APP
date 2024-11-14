@@ -1,29 +1,7 @@
 {
   "eventsTickets": [
     {
-      "id": 1,
-      "name": "Opium All Night",
-      "date": "2024-12-05",
-      "time": "01:00 PM",
-      "location": "National Art Gallery",
-      "description": "A showcase of modern art and sculptures by emerging artists.",
-      "tickets": [
-        {
-          "type": "Standard",
-          "price": 3500.0,
-          "quantityAvailable": 100
-        }
-      ],
-      "availableTickets": 150,
-      "contact": {
-        "username": "art_expo_fan",
-        "email": "art_lover@example.com",
-        "avatar": "https://example.com/avatar3.jpg"
-      },
-      "poster": "https://i.postimg.cc/xjK0zVQP/Rock-the-Night-Music-1.png"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "Startup Pitch Fest",
       "date": "2025-01-15",
       "time": "09:00 AM",
@@ -32,7 +10,7 @@
       "tickets": [
         {
           "type": "Investor",
-          "price": 200.0,
+          "price": 200,
           "quantityAvailable": 40
         }
       ],
@@ -45,7 +23,7 @@
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KO3psl6fBGL-g4n10dvv72geFBv9f4N6zA&s"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Ultimate Gaming Tournament",
       "date": "2025-05-01",
       "time": "09:00 AM",
@@ -54,13 +32,8 @@
       "tickets": [
         {
           "type": "Standard",
-          "price": 2000.0,
+          "price": 2000,
           "quantityAvailable": 300
-        },
-        {
-          "type": "VIP",
-          "price": 5000.0,
-          "quantityAvailable": 100
         }
       ],
       "availableTickets": 400,
@@ -72,7 +45,7 @@
       "poster": "https://i.pinimg.com/236x/0b/0d/a1/0b0da1d22b68acb707c324efdd001c5b.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Cultural Arts Festival",
       "date": "2025-06-10",
       "time": "12:00 PM",
@@ -81,13 +54,8 @@
       "tickets": [
         {
           "type": "Standard",
-          "price": 1500.0,
+          "price": 1500,
           "quantityAvailable": 250
-        },
-        {
-          "type": "VIP",
-          "price": 3500.0,
-          "quantityAvailable": 100
         }
       ],
       "availableTickets": 350,
@@ -99,7 +67,7 @@
       "poster": "https://images.theconversation.com/files/558643/original/file-20231109-15-2nu52.jpg?ixlib=rb-4.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Jazz Night Under the Stars",
       "date": "2025-07-20",
       "time": "07:00 PM",
@@ -108,13 +76,8 @@
       "tickets": [
         {
           "type": "Standard",
-          "price": 3000.0,
+          "price": 3000,
           "quantityAvailable": 150
-        },
-        {
-          "type": "VIP",
-          "price": 6000.0,
-          "quantityAvailable": 50
         }
       ],
       "availableTickets": 200,
@@ -126,58 +89,114 @@
       "poster": "https://source.boomplaymusic.com/group10/M00/11/22/6a27876918254543bb932fa87bd99992_464_464.jpg"
     },
     {
-      "id": 6,
-      "name": "Luxury Car Show",
-      "date": "2025-08-15",
-      "time": "10:00 AM",
-      "location": "Nairobi Motor Mall",
-      "description": "An exhibition of the latest luxury car models from top manufacturers, with test drives and expert presentations.",
+      "id": "6",
+      "name": "Tech Innovators Conference",
+      "date": "2025-08-05",
+      "time": "08:00 AM",
+      "location": "Nairobi Innovation Hub",
+      "description": "A conference bringing together tech innovators to discuss cutting-edge technologies and startups.",
       "tickets": [
         {
           "type": "Standard",
-          "price": 2000.0,
+          "price": 1500,
           "quantityAvailable": 500
-        },
+        }
+      ],
+      "availableTickets": 500,
+      "contact": {
+        "username": "tech_innovator",
+        "email": "techguru@example.com",
+        "avatar": "https://example.com/avatar_tech.jpg"
+      },
+      "poster": "https://news.topco.co.za/hubfs/Africa%20Tech%20Week%202023.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Food & Wine Festival",
+      "date": "2025-09-15",
+      "time": "04:00 PM",
+      "location": "KICC Nairobi",
+      "description": "A celebration of gourmet food and fine wines with tastings, cooking demonstrations, and live entertainment.",
+      "tickets": [
         {
-          "type": "VIP",
-          "price": 8000.0,
-          "quantityAvailable": 100
+          "type": "Standard",
+          "price": 2000,
+          "quantityAvailable": 600
         }
       ],
       "availableTickets": 600,
       "contact": {
-        "username": "car_expo",
-        "email": "luxurycar@example.com",
-        "avatar": "https://example.com/avatar_car.jpg"
+        "username": "foodie_lover",
+        "email": "foodfan@example.com",
+        "avatar": "https://example.com/avatar_foodie.jpg"
       },
-      "poster": "https://static01.nyt.com/images/2020/09/27/business/27china-consumer-1/merlin_177606999_134d92b7-3530-4214-a54c-b9c17c98d464-superJumbo.jpg"
+      "poster": "https://assets.barcats.com/community/event/27021387_1632616783483837_4685373919139580865_o.jpg"
     },
     {
-      "id": 7,
-      "name": "Space Exploration Conference",
-      "date": "2025-09-25",
-      "time": "08:00 AM",
-      "location": "Kenya Science Campus",
-      "description": "A conference for space enthusiasts, featuring talks on the latest developments in space exploration, technology, and future missions.",
+      "id": "8",
+      "name": "Environmental Awareness Summit",
+      "date": "2025-10-01",
+      "time": "10:00 AM",
+      "location": "Nairobi Green Park",
+      "description": "An event aimed at raising awareness about climate change, sustainability, and green initiatives.",
       "tickets": [
         {
-          "type": "General",
-          "price": 1000.0,
-          "quantityAvailable": 300
-        },
+          "type": "Standard",
+          "price": 1000,
+          "quantityAvailable": 600
+        }
+      ],
+      "availableTickets": 600,
+      "contact": {
+        "username": "eco_warrior",
+        "email": "ecoenthusiast@example.com",
+        "avatar": "https://example.com/avatar_eco.jpg"
+      },
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDO4XAwQMy2zbez9loFctI4fVfoezWwVlxkfnLCOJ-SVR1GJQEWYB5OJq2VFXEvQyk4ps&usqp=CAU"
+    },
+    {
+      "id": "9",
+      "name": "Photography Exhibition",
+      "date": "2025-11-12",
+      "time": "02:00 PM",
+      "location": "Art Gallery Nairobi",
+      "description": "An exhibition showcasing the best of local and international photographers with workshops and live shoots.",
+      "tickets": [
         {
-          "type": "VIP",
-          "price": 3500.0,
-          "quantityAvailable": 50
+          "type": "Standard",
+          "price": 1500,
+          "quantityAvailable": 250
+        }
+      ],
+      "availableTickets": 250,
+      "contact": {
+        "username": "photo_artist",
+        "email": "photographer@example.com",
+        "avatar": "https://example.com/avatar_photographer.jpg"
+      },
+      "poster": "https://www.musee-mccord-stewart.ca/app/uploads/2024/05/mccord-stewart_exposition_portraits-et-mode_13_ra-900.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Fashion Show Extravaganza",
+      "date": "2025-12-25",
+      "time": "06:00 PM",
+      "location": "Safari Park Hotel",
+      "description": "A glamorous fashion show featuring top designers, models, and an exclusive runway event.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 4000,
+          "quantityAvailable": 350
         }
       ],
       "availableTickets": 350,
       "contact": {
-        "username": "space_enthusiast",
-        "email": "spacefan@example.com",
-        "avatar": "https://example.com/avatar_space.jpg"
+        "username": "fashionista",
+        "email": "fashionlover@example.com",
+        "avatar": "https://example.com/avatar_fashionista.jpg"
       },
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbXvIA0kTUqOx_e-Ry8Pw_T3jZcVuWBkDlw&s"
+      "poster": "https://media.cnn.com/api/v1/images/stellar/prod/230910184341-02-nyfw-ss24-highlights-ralph-lauren.jpg?q=w_2000,c_fill"
     }
   ]
 }
