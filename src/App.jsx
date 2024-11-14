@@ -5,7 +5,6 @@ import Home from "./Pages/Home";
 import IndividualTicket from "./Pages/IndividualTicket";
 import AddTicket from "./Pages/AddTicket";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
