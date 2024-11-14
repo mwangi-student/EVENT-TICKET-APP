@@ -25,7 +25,9 @@ function IndividualTicket() {
     }
 
     // Fetch event data based on event ID
-    fetch(`https://event-ticket-app.onrender.com/${event_id}`)
+    fetch(
+      `https://event-ticket-app.onrender.com/eventsTickets/${event_id}?_=${new Date().getTime()}`
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch event data.");
@@ -73,13 +75,18 @@ function IndividualTicket() {
       const updatedEvent = { ...event, tickets: updatedTickets };
 
       // Send the updated data to the server
-      fetch(`https://event-ticket-app.onrender.com/${event.id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(updatedEvent)
-      })
+      fetch(
+        `https://event-ticket-app.onrender.com/eventsTickets/${
+          event.id
+        }?_=${new Date().getTime()}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(updatedEvent)
+        }
+      )
         .then((response) => response.json())
         .then((data) => {
           setEvent(data);
@@ -99,7 +106,7 @@ function IndividualTicket() {
   const deleteEvent = async () => {
     try {
       const response = await fetch(
-        `https://event-ticket-app.onrender.com/${event_id}`,
+        `https://event-ticket-app.onrender.com/eventsTickets/${event_id}`,
         {
           method: "DELETE"
         }
