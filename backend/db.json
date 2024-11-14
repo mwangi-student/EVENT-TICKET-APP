@@ -1,26 +1,49 @@
 {
   "eventsTickets": [
     {
-      "id": 3,
-      "name": "Art & Sculpture Expo",
-      "date": "2024-12-05",
-      "time": "01:00 PM",
-      "location": "National Art Gallery",
-      "description": "A showcase of modern art and sculptures by emerging artists.",
+      "id": 1,
+      "name": "MUSCLE CAR FEST",
+      "date": "2024-11-23",
+      "time": "10:00 AM - 10:00 AM",
+      "location": "Prestige mall",
+      "description": "Come see all your favourite cars.",
       "tickets": [
         {
           "type": "Standard",
-          "price": 40.0,
+          "price": "free",
+          "quantityAvailable": "no limit"
+        }
+      ],
+      "availableTickets": 100,
+      "contact": {
+        "username": "muscle_car_enthusiast",
+        "email": "musclecars@example.com",
+        "avatar": "https://example.com/avatar1.jpg"
+      },
+      "poster": "https://i0.wp.com/www.pomonaswapmeet.com/blog/wp-content/uploads/2013/07/Red-Muscle-Car.jpg?fit=950%2C600&ssl=1"
+    },
+
+    {
+      "id": 3,
+      "name": "Opium All Night",
+      "date": "2024-12-05",
+      "time": "06:00 PM",
+      "location": "Kasarani stadium",
+      "description": "A showcase of modern music by emerging artists like Lil Yachty, Tyler the Creator, Baby Keem, and more.",
+      "tickets": [
+        {
+          "type": "Standard",
+          "price": 3500.0,
           "quantityAvailable": 100
         }
       ],
       "availableTickets": 150,
       "contact": {
-        "username": "art_expo_fan",
-        "email": "art_lover@example.com",
+        "username": "night_vibes",
+        "email": "opiumevent@example.com",
         "avatar": "https://example.com/avatar3.jpg"
       },
-      "poster": "https://i.pinimg.com/236x/73/54/c6/7354c6196f6de5ddc34635dfd9556903.jpg"
+      "poster": "images/Rock the Night Music (1).png"
     },
     {
       "id": 4,
