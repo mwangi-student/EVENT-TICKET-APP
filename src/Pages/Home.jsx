@@ -6,7 +6,11 @@ function Home() {
 
   // Fetch tickets data from the server
   useEffect(() => {
-    fetch("http://localhost:3000/eventsTickets")
+    fetch(
+      `https://event-ticket-app.onrender.com/${
+        event.id
+      }?_=${new Date().getTime()}`
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data); // Check the fetched data

@@ -26,7 +26,7 @@ function IndividualTicket() {
 
     // Fetch event data based on event ID
     fetch(
-      `http://localhost:3000/eventsTickets/${event_id}?_=${new Date().getTime()}`
+      `https://event-ticket-app.onrender.com/${event_id}?_=${new Date().getTime()}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -76,7 +76,7 @@ function IndividualTicket() {
 
       // Send the updated data to the server
       fetch(
-        `http://localhost:3000/eventsTickets/${
+        `https://event-ticket-app.onrender.com/${
           event.id
         }?_=${new Date().getTime()}`,
         {
@@ -106,7 +106,7 @@ function IndividualTicket() {
   const deleteEvent = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/eventsTickets/${event_id}?_=${new Date().getTime()}`,
+        `https://event-ticket-app.onrender.com/${event_id}?_=${new Date().getTime()}`,
         {
           method: "DELETE"
         }
