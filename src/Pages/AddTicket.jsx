@@ -1,17 +1,21 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AddTicketForm() {
   const [formData, setFormData] = useState({
     eventName: "",
     date: "",
     availableTickets: "",
-    posterUrl: "",
+    poster: "",
     venue: "",
     time: "",
     location: "",
     description: ""
   });
 
+  const navigate = useNavigate(); // Initialize the navigate hook
+
+  // Handle form changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,33 +24,35 @@ export default function AddTicketForm() {
     }));
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "https://event-ticket-app.onrender.com/eventsTickets",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(formData)
-        }
-      );
+      const response = await fetch("https://event-ticket-app.onrender.com/eventsTickets", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
 
       if (response.ok) {
         console.log("Event Created:", formData);
 
+        // Clear form fields
         setFormData({
           eventName: "",
           date: "",
           availableTickets: "",
-          posterUrl: "",
+          poster: "",
           venue: "",
           time: "",
           location: "",
           description: ""
         });
+
+        // Redirect to homepage
+        navigate("/"); // Replace "/" with your homepage route
       } else {
         console.error("Failed to create event:", response.statusText);
       }
@@ -59,7 +65,7 @@ export default function AddTicketForm() {
     <div className="form-container">
       <h2 className="form-header">CREATE YOUR EVENT</h2>
       <form onSubmit={handleSubmit} className="form-grid">
-        <div className="left-side">
+        <div className="left-side mb-10px">
           <input
             type="text"
             name="eventName"
@@ -83,13 +89,13 @@ export default function AddTicketForm() {
           />
           <input
             type="url"
-            name="posterUrl"
+            name="poster"
             placeholder="Poster URL"
-            value={formData.posterUrl}
+            value={formData.poster}
             onChange={handleChange}
           />
         </div>
-        <div className="right-side">
+        <div className="right-side mb-10px">
           <input
             type="text"
             name="venue"
@@ -100,7 +106,7 @@ export default function AddTicketForm() {
           <input
             type="time"
             name="time"
-            placeholder="Time"
+            placeholder="Venue Time"
             value={formData.time}
             onChange={handleChange}
           />
