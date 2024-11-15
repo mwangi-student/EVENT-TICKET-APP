@@ -6,7 +6,7 @@ function Home() {
 
   // Fetch tickets data from the server
   useEffect(() => {
-    fetch("https://event-ticket-app.onrender.com/eventsTickets")
+    fetch("https://event-ticket-app-1.onrender.com/eventsTickets")
       .then((res) => res.json())
       .then((data) => {
         console.log(data); // Check the fetched data

@@ -28,7 +28,7 @@ export default function AddTicketForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://event-ticket-app.onrender.com/eventsTickets", {
+      const response = await fetch("https://event-ticket-app-1.onrender.com/eventsTickets", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
