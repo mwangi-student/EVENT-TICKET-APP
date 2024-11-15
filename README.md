@@ -6,7 +6,7 @@
 ## Authors:
 - Mwangi Brian
 - George Golder
-- Hafsa
+- Hafsa  Abdirizack
 
 ## App Overview
 The **Ticket Management App** is a comprehensive platform designed to simplify the process of creating, managing, and purchasing event tickets. Whether organizing a conference, concert, or any other type of event, this app provides an intuitive interface for event organizers and attendees. Users can create events, post tickets, purchase tickets, reserve tickets for later, and manage their ticket selections seamlessly.
